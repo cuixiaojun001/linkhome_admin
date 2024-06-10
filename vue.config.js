@@ -32,7 +32,11 @@ module.exports = {
   productionSourceMap: false,
   devServer: {
     port: port,
+    disableHostCheck: true,
     open: true,
+    allowedHosts: [
+      '.'
+    ],
     overlay: {
       warnings: false,
       errors: true
